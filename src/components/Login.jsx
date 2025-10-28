@@ -29,7 +29,7 @@ function Login() {
     <div className="login-container">
       <div className="login-box">
         <div className="login-header">
-          <h1>🎓 UniMarket</h1>
+          <h1>🎓 ThriftED</h1>
           <p>Your University Student Marketplace</p>
         </div>
 
@@ -61,7 +61,7 @@ function Login() {
             <label>University Email</label>
             <input
               type="email"
-              placeholder="john.doe@university.edu"
+              placeholder="j.doe@rgu.ac.uk"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required
@@ -99,7 +99,7 @@ function Login() {
         </form>
 
         <div className="demo-note">
-          <strong>Demo Note:</strong> Use any university email (e.g., @university.edu, @uni.edu, @student.edu) with any password (6+ chars)
+          <strong>Demo Note:</strong> Use RGU email format (e.g., j.doe@rgu.ac.uk, r.smith@rgu.ac.uk) with any password (6+ chars)
         </div>
       </div>
     </div>

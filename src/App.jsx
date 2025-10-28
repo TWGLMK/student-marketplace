@@ -6,6 +6,7 @@ import Marketplace from './components/Marketplace';
 import ItemDetails from './components/ItemDetails';
 import PostItem from './components/PostItem';
 import MyListings from './components/MyListings';
+import Subscription from './components/Subscription';
 import './App.css';
 
 function PrivateRoute({ children }) {
@@ -56,6 +57,14 @@ function AppRoutes() {
         element={
           <PrivateRoute>
             <MyListings />
+          </PrivateRoute>
+        } 
+      />
+      <Route 
+        path="/subscription" 
+        element={
+          <PrivateRoute>
+            <Subscription />
           </PrivateRoute>
         } 
       />

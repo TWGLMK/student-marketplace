@@ -38,7 +38,7 @@ If you haven't already, you'll need to install Node.js (which includes npm):
 4. **Open your browser:**
    - The terminal will show a URL (typically http://localhost:5173)
    - Open this URL in your web browser
-   - You should see the UniMarket login page!
+   - You should see the ThriftED login page!
 
 ## First Steps
 

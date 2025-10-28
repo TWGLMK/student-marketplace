@@ -1,4 +1,4 @@
-# 🎓 UniMarket - Student Marketplace
+# 🎓 ThriftED - Student Marketplace
 
 A demo student marketplace application where students can buy and sell items exclusively using their university login credentials.
 

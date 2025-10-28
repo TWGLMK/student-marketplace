@@ -13,6 +13,9 @@ function Marketplace() {
   const navigate = useNavigate();
 
   useEffect(() => {
+    // Clear localStorage to force reload of updated sample data
+    localStorage.removeItem('marketplace_items');
+    
     // Load items from localStorage or use sample data
     const savedItems = localStorage.getItem('marketplace_items');
     const loadedItems = savedItems ? JSON.parse(savedItems) : sampleItems;
@@ -42,9 +45,12 @@ function Marketplace() {
     <div className="marketplace">
       <nav className="navbar">
         <div className="nav-content">
-          <h1>🎓 UniMarket</h1>
+          <h1>🎓 ThriftED</h1>
           <div className="nav-right">
             <span className="user-name">Hi, {user.name}!</span>
+            <button onClick={() => navigate('/subscription')} className="nav-btn premium">
+              🆓 Free Listings
+            </button>
             <button onClick={() => navigate('/my-listings')} className="nav-btn">
               My Listings
             </button>
@@ -101,7 +107,7 @@ function Marketplace() {
                   <h3>{item.title}</h3>
                   <p className="item-description">{item.description}</p>
                   <div className="item-footer">
-                    <span className="item-price">${item.price}</span>
+                    <span className="item-price">£{item.price}</span>
                     <span className="item-seller">by {item.sellerName}</span>
                   </div>
                 </div>

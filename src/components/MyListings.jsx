@@ -59,7 +59,7 @@ function MyListings() {
                 <img src={item.images[0]} alt={item.title} />
                 <div className="listing-info">
                   <h3>{item.title}</h3>
-                  <p className="listing-price">${item.price}</p>
+                  <p className="listing-price">£{item.price}</p>
                   <p className="listing-date">
                     Posted: {new Date(item.postedDate).toLocaleDateString()}
                   </p>

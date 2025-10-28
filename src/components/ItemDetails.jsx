@@ -66,7 +66,7 @@ function ItemDetails() {
             </div>
 
             <h1 className="details-title">{item.title}</h1>
-            <p className="details-price">${item.price}</p>
+            <p className="details-price">£{item.price}</p>
 
             <div className="details-description">
               <h3>Description</h3>

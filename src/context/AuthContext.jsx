@@ -3,7 +3,7 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 const AuthContext = createContext(null);
 
 // Demo university email domains
-const ALLOWED_DOMAINS = ['university.edu', 'uni.edu', 'student.edu'];
+const ALLOWED_DOMAINS = ['rgu.ac.uk'];
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
