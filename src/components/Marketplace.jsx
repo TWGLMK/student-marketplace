@@ -63,7 +63,7 @@ function Marketplace() {
             <button onClick={() => navigate('/post')} className="nav-btn primary">
               + Post Item
             </button>
-            <button onClick={logout} className="nav-btn">
+            <button onClick={logout} className="logout-btn">
               Logout
             </button>
           </div>

@@ -23,8 +23,10 @@
 
 .navbar h1 {
   color: #667eea;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
+  font-weight: 800;
   margin: 0;
+  text-shadow: 0 2px 4px rgba(102, 126, 234, 0.2);
 }
 
 .nav-right {
@@ -39,41 +41,63 @@
 }
 
 .nav-btn {
-  padding: 10px 20px;
-  border: 2px solid #667eea;
-  background: white;
-  color: #667eea;
-  border-radius: 8px;
-  font-weight: 600;
+  padding: 8px 16px;
+  border: 1px solid #e0e0e0;
+  background: #f8f9fa;
+  color: #666;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.9rem;
   transition: all 0.3s ease;
 }
 
 .nav-btn:hover {
-  background: #667eea;
-  color: white;
+  background: #e9ecef;
+  color: #333;
+  border-color: #ccc;
 }
 
 .nav-btn.primary {
   background: #667eea;
   color: white;
+  border-color: #667eea;
+  font-weight: 600;
 }
 
 .nav-btn.primary:hover {
   background: #5568d3;
+  border-color: #5568d3;
 }
 
 .nav-btn.premium {
   background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%);
-  border: 2px solid #4CAF50;
+  border: 1px solid #4CAF50;
   color: white;
-  font-weight: 700;
-  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3);
+  font-weight: 600;
 }
 
 .nav-btn.premium:hover {
   background: linear-gradient(135deg, #66BB6A 0%, #4CAF50 100%);
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4);
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3);
+}
+
+.logout-btn {
+  padding: 10px 20px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(220, 53, 69, 0.3);
+}
+
+.logout-btn:hover {
+  background: #c82333;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(220, 53, 69, 0.4);
 }
 
 .marketplace-content {
@@ -280,7 +304,7 @@
   }
   
   .navbar h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
   }
   
   .nav-right {
@@ -371,7 +395,7 @@
   }
   
   .navbar h1 {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
   }
   
   .nav-btn {
