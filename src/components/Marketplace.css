@@ -102,10 +102,69 @@
 }
 
 .filter-section {
-  display: flex;
-  gap: 10px;
   margin-bottom: 30px;
-  flex-wrap: wrap;
+}
+
+.filter-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.hamburger-menu-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 30px;
+  background: #667eea;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px;
+  transition: background 0.3s ease;
+}
+
+.hamburger-menu-btn:hover {
+  background: #5568d3;
+}
+
+.hamburger-line {
+  width: 100%;
+  height: 3px;
+  background: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.selected-category {
+  font-weight: 600;
+  color: #333;
+  font-size: 1rem;
+}
+
+.filter-dropdown {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .category-btn {
@@ -251,9 +310,22 @@
     font-size: 1rem;
   }
   
-  .filter-section {
-    justify-content: center;
-    gap: 8px;
+  .filter-header {
+    gap: 12px;
+  }
+  
+  .hamburger-menu-btn {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .selected-category {
+    font-size: 0.9rem;
+  }
+  
+  .filter-dropdown {
+    padding: 12px;
+    gap: 6px;
   }
   
   .category-btn {
@@ -316,14 +388,28 @@
     gap: 15px;
   }
   
-  .filter-section {
-    flex-direction: column;
-    align-items: center;
+  .filter-header {
+    gap: 10px;
+  }
+  
+  .hamburger-menu-btn {
+    width: 26px;
+    height: 26px;
+  }
+  
+  .selected-category {
+    font-size: 0.85rem;
+  }
+  
+  .filter-dropdown {
+    padding: 10px;
+    gap: 5px;
   }
   
   .category-btn {
+    padding: 6px 12px;
+    font-size: 0.8rem;
     width: 100%;
-    max-width: 200px;
     text-align: center;
   }
   

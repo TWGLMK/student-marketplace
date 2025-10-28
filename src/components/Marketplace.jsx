@@ -9,6 +9,7 @@ function Marketplace() {
   const [filteredItems, setFilteredItems] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState('All Categories');
   const [searchQuery, setSearchQuery] = useState('');
+  const [isFilterMenuOpen, setIsFilterMenuOpen] = useState(false);
   const { user, logout } = useAuth();
   const navigate = useNavigate();
 
@@ -40,6 +41,11 @@ function Marketplace() {
 
     setFilteredItems(filtered);
   }, [selectedCategory, searchQuery, items]);
+
+  const handleCategorySelect = (category) => {
+    setSelectedCategory(category);
+    setIsFilterMenuOpen(false);
+  };
 
   return (
     <div className="marketplace">
@@ -76,15 +82,31 @@ function Marketplace() {
         </div>
 
         <div className="filter-section">
-          {categories.map(category => (
-            <button
-              key={category}
-              className={`category-btn ${selectedCategory === category ? 'active' : ''}`}
-              onClick={() => setSelectedCategory(category)}
+          <div className="filter-header">
+            <button 
+              className="hamburger-menu-btn"
+              onClick={() => setIsFilterMenuOpen(!isFilterMenuOpen)}
             >
-              {category}
+              <span className="hamburger-line"></span>
+              <span className="hamburger-line"></span>
+              <span className="hamburger-line"></span>
             </button>
-          ))}
+            <span className="selected-category">{selectedCategory}</span>
+          </div>
+          
+          {isFilterMenuOpen && (
+            <div className="filter-dropdown">
+              {categories.map(category => (
+                <button
+                  key={category}
+                  className={`category-btn ${selectedCategory === category ? 'active' : ''}`}
+                  onClick={() => handleCategorySelect(category)}
+                >
+                  {category}
+                </button>
+              ))}
+            </div>
+          )}
         </div>
 
         <div className="items-grid">
