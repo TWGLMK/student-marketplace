@@ -171,11 +171,165 @@
   margin: 0;
 }
 
+/* Mobile Responsive Design */
 @media (max-width: 768px) {
+  .item-details {
+    padding: 20px 15px;
+  }
+  
+  .back-btn {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+  
   .details-grid {
     grid-template-columns: 1fr;
-    gap: 30px;
-    padding: 20px;
+    gap: 25px;
+    padding: 25px 20px;
+    border-radius: 15px;
+  }
+  
+  .details-image {
+    border-radius: 12px;
+    max-height: 300px;
+  }
+  
+  .details-title {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+  }
+  
+  .details-price {
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+  
+  .details-header {
+    gap: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .details-category,
+  .details-condition {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+  }
+  
+  .details-description,
+  .seller-info,
+  .contact-section {
+    margin-bottom: 25px;
+  }
+  
+  .details-description h3,
+  .seller-info h3,
+  .contact-section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+  
+  .details-description p {
+    font-size: 0.95rem;
+  }
+  
+  .contact-section textarea {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+  
+  .send-btn {
+    padding: 12px;
+    font-size: 1rem;
+  }
+  
+  .quick-msg-btn {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .own-listing-note {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .item-details {
+    padding: 15px 10px;
+  }
+  
+  .back-btn {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+  }
+  
+  .details-grid {
+    padding: 20px 15px;
+    border-radius: 12px;
+  }
+  
+  .details-image {
+    border-radius: 10px;
+    max-height: 250px;
+  }
+  
+  .details-title {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  
+  .details-price {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .details-header {
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 12px;
+  }
+  
+  .details-category,
+  .details-condition {
+    padding: 5px 10px;
+    font-size: 0.75rem;
+  }
+  
+  .details-description,
+  .seller-info,
+  .contact-section {
+    margin-bottom: 20px;
+  }
+  
+  .details-description h3,
+  .seller-info h3,
+  .contact-section h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .details-description p {
+    font-size: 0.9rem;
+  }
+  
+  .contact-section textarea {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+  
+  .send-btn {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+  
+  .quick-msg-btn {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+  
+  .own-listing-note {
+    padding: 12px;
   }
 }
 

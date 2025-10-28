@@ -90,13 +90,93 @@
   box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
 }
 
+/* Mobile Responsive Design */
 @media (max-width: 768px) {
+  .post-item {
+    padding: 20px 15px;
+  }
+  
+  .post-form-container {
+    padding: 30px 25px;
+    border-radius: 15px;
+  }
+  
+  .post-form-container h1 {
+    font-size: 1.8rem;
+  }
+  
+  .subtitle {
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+  }
+  
+  .post-form .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .post-form label {
+    font-size: 0.9rem;
+  }
+  
+  .post-form input,
+  .post-form textarea,
+  .post-form select {
+    padding: 10px 14px;
+    font-size: 0.95rem;
+  }
+  
   .form-row {
     grid-template-columns: 1fr;
+    gap: 15px;
   }
+  
+  .post-form .submit-btn {
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
 
+@media (max-width: 480px) {
+  .post-item {
+    padding: 15px 10px;
+  }
+  
   .post-form-container {
-    padding: 20px;
+    padding: 25px 20px;
+    border-radius: 12px;
+  }
+  
+  .post-form-container h1 {
+    font-size: 1.6rem;
+  }
+  
+  .subtitle {
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+  }
+  
+  .post-form .form-group {
+    margin-bottom: 18px;
+  }
+  
+  .post-form label {
+    font-size: 0.85rem;
+  }
+  
+  .post-form input,
+  .post-form textarea,
+  .post-form select {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+  
+  .post-form small {
+    font-size: 0.8rem;
+  }
+  
+  .post-form .submit-btn {
+    padding: 10px;
+    font-size: 0.95rem;
   }
 }
 

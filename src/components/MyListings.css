@@ -131,9 +131,159 @@
   border: 2px solid #ff4444;
 }
 
-.delete-btn:hover {
-  background: #ff4444;
-  color: white;
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  .my-listings {
+    padding: 20px 15px;
+  }
+  
+  .listings-header {
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+    margin-bottom: 25px;
+  }
+  
+  .listings-header h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  
+  .add-btn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+    align-self: center;
+  }
+  
+  .no-listings {
+    padding: 40px 25px;
+    border-radius: 15px;
+  }
+  
+  .no-listings p {
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+  }
+  
+  .post-first-btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+  
+  .listings-grid {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .listing-card {
+    border-radius: 12px;
+  }
+  
+  .listing-card img {
+    height: 180px;
+  }
+  
+  .listing-info {
+    padding: 15px;
+  }
+  
+  .listing-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+  }
+  
+  .listing-price {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+  }
+  
+  .listing-date {
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+  }
+  
+  .listing-actions {
+    gap: 8px;
+  }
+  
+  .view-btn,
+  .delete-btn {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .my-listings {
+    padding: 15px 10px;
+  }
+  
+  .listings-header {
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  
+  .listings-header h1 {
+    font-size: 1.6rem;
+  }
+  
+  .add-btn {
+    padding: 8px 16px;
+    font-size: 0.85rem;
+  }
+  
+  .no-listings {
+    padding: 30px 20px;
+    border-radius: 12px;
+  }
+  
+  .no-listings p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .post-first-btn {
+    padding: 10px 20px;
+    font-size: 0.95rem;
+  }
+  
+  .listings-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .listing-card img {
+    height: 160px;
+  }
+  
+  .listing-info {
+    padding: 12px;
+  }
+  
+  .listing-info h3 {
+    font-size: 1rem;
+    margin-bottom: 6px;
+  }
+  
+  .listing-price {
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+  }
+  
+  .listing-date {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .listing-actions {
+    gap: 6px;
+  }
+  
+  .view-btn,
+  .delete-btn {
+    padding: 6px;
+    font-size: 0.85rem;
+  }
 }
 
 

@@ -187,31 +187,117 @@
   font-style: italic;
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
   .subscription-container {
-    padding: 10px;
-  }
-  
-  .subscription-card {
-    padding: 30px 20px;
+    padding: 15px;
   }
   
   .subscription-header h1 {
     font-size: 2rem;
   }
   
+  .subscription-subtitle {
+    font-size: 1rem;
+  }
+  
+  .subscription-card {
+    padding: 30px 20px;
+  }
+  
+  .free-icon {
+    font-size: 3rem;
+  }
+  
+  .subscription-card h2 {
+    font-size: 1.5rem;
+  }
+  
+  .subscription-description {
+    font-size: 1rem;
+  }
+  
   .amount {
     font-size: 3rem;
   }
   
-  .subscription-actions {
-    gap: 12px;
+  .currency {
+    font-size: 1.3rem;
+  }
+  
+  .period {
+    font-size: 1rem;
+  }
+  
+  .features-list h3 {
+    font-size: 1.1rem;
+  }
+  
+  .features-list li {
+    font-size: 0.9rem;
+    padding: 6px 0;
+  }
+  
+  .upgrade-btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+  
+  .back-btn {
+    padding: 10px 25px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .subscription-container {
+    padding: 10px;
+  }
+  
+  .subscription-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .subscription-card {
+    padding: 25px 15px;
+  }
+  
+  .free-icon {
+    font-size: 2.5rem;
+  }
+  
+  .subscription-card h2 {
+    font-size: 1.3rem;
+  }
+  
+  .amount {
+    font-size: 2.5rem;
+  }
+  
+  .currency {
+    font-size: 1.1rem;
+  }
+  
+  .period {
+    font-size: 0.9rem;
+  }
+  
+  .pricing-section {
+    padding: 20px;
+  }
+  
+  .features-list li {
+    font-size: 0.85rem;
+    padding: 5px 0;
   }
   
   .upgrade-btn,
   .back-btn {
-    padding: 12px 25px;
-    font-size: 1rem;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  
+  .disclaimer {
+    font-size: 0.8rem;
   }
 }
