@@ -23,7 +23,7 @@
 }
 
 .logo-image {
-  max-height: 60px;
+  max-height: 180px;
   width: auto;
   height: auto;
   display: block;
@@ -308,7 +308,7 @@
   }
   
   .logo-image {
-    max-height: 50px;
+    max-height: 150px;
   }
   
   .nav-right {
@@ -406,7 +406,7 @@
   }
   
   .logo-image {
-    max-height: 45px;
+    max-height: 135px;
   }
   
   .nav-btn {
