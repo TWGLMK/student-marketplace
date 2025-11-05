@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { sampleItems, categories } from '../data/sampleData';
-import thriftedLogo from '../assets/thrifted-logo.png';
+import thriftedLogo from '../assets/image0-removebg-preview (1).png';
 import './Marketplace.css';
 
 function Marketplace() {

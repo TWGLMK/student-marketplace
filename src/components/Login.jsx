@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
-import thriftedLogo from '../assets/thrifted-logo.png';
+import thriftedLogo from '../assets/image0-removebg-preview (1).png';
 import './Login.css';
 
 function Login() {
