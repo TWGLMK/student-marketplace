@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useAuth } from '../context/AuthContext';
+import thriftedLogo from '../assets/thrifted-logo.png';
 import './Login.css';
 
 function Login() {
@@ -29,8 +30,7 @@ function Login() {
     <div className="login-container">
       <div className="login-box">
         <div className="login-header">
-          <h1>🎓 ThriftED</h1>
-          <p>Your University Student Marketplace</p>
+          <img src={thriftedLogo} alt="ThriftED Student Marketplace" className="logo-image" />
         </div>
 
         <div className="login-tabs">

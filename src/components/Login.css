@@ -20,15 +20,12 @@
   margin-bottom: 30px;
 }
 
-.login-header h1 {
-  color: #667eea;
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-}
-
-.login-header p {
-  color: #666;
-  font-size: 1rem;
+.logo-image {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  display: block;
 }
 
 .login-tabs {
@@ -130,12 +127,9 @@
     border-radius: 15px;
   }
   
-  .login-header h1 {
-    font-size: 2rem;
-  }
-  
-  .login-header p {
-    font-size: 0.9rem;
+  .logo-image {
+    max-width: 250px;
+    margin-bottom: 15px;
   }
   
   .login-tabs {
@@ -172,12 +166,9 @@
     padding: 25px 20px;
   }
   
-  .login-header h1 {
-    font-size: 1.8rem;
-  }
-  
-  .login-header p {
-    font-size: 0.85rem;
+  .logo-image {
+    max-width: 200px;
+    margin-bottom: 12px;
   }
   
   .login-tabs {

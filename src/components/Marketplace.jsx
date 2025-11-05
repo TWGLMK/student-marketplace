@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { sampleItems, categories } from '../data/sampleData';
+import thriftedLogo from '../assets/thrifted-logo.png';
 import './Marketplace.css';
 
 function Marketplace() {
@@ -51,7 +52,7 @@ function Marketplace() {
     <div className="marketplace">
       <nav className="navbar">
         <div className="nav-content">
-          <h1>🎓 ThriftED</h1>
+          <img src={thriftedLogo} alt="ThriftED Student Marketplace" className="logo-image" />
           <div className="nav-right">
             <span className="user-name">Hi, {user.name}!</span>
             <button onClick={() => navigate('/subscription')} className="nav-btn premium">
