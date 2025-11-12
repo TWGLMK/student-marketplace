@@ -48,13 +48,28 @@ function Marketplace() {
     setIsFilterMenuOpen(false);
   };
 
+  const demoPoints = 80;
+  const pointsGoal = 100;
+  const progressPercent = Math.min((demoPoints / pointsGoal) * 100, 100);
+
   return (
     <div className="marketplace">
       <nav className="navbar">
         <div className="nav-content">
           <img src={thriftedLogo} alt="ThriftED Student Marketplace" className="logo-image" />
           <div className="nav-right">
-            <span className="user-name">Hi, {user.name}!</span>
+            <div className="user-progress">
+              <span className="user-email">{user?.email}</span>
+              <div className="points-bar">
+                <div
+                  className="points-fill"
+                  style={{ width: `${progressPercent}%` }}
+                ></div>
+              </div>
+              <span className="points-text">
+                {demoPoints} / {pointsGoal} points
+              </span>
+            </div>
             <button onClick={() => navigate('/subscription')} className="nav-btn premium">
               🆓 Free Listings
             </button>
