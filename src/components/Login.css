@@ -3,7 +3,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 40px 20px;
+  background: linear-gradient(140deg, #111827 0%, #1f2937 40%, rgba(59, 130, 246, 0.65) 100%);
 }
 
 .login-box {

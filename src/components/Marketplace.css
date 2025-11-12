@@ -79,9 +79,9 @@
 
 .nav-btn {
   padding: 8px 16px;
-  border: 1px solid #e0e0e0;
-  background: #f8f9fa;
-  color: #666;
+  border: 1px solid rgba(31, 41, 55, 0.15);
+  background: #f5f6fa;
+  color: #1f2937;
   border-radius: 6px;
   font-weight: 500;
   font-size: 0.9rem;
@@ -89,34 +89,38 @@
 }
 
 .nav-btn:hover {
-  background: #e9ecef;
-  color: #333;
-  border-color: #ccc;
+  background: #e6e9f2;
+  border-color: rgba(31, 41, 55, 0.3);
+  color: #111827;
 }
 
 .nav-btn.primary {
-  background: #667eea;
-  color: white;
-  border-color: #667eea;
+  background: #f77f41;
+  border-color: #f77f41;
+  color: #ffffff;
   font-weight: 600;
+  box-shadow: 0 2px 6px rgba(247, 127, 65, 0.3);
 }
 
 .nav-btn.primary:hover {
-  background: #5568d3;
-  border-color: #5568d3;
+  background: #e9702d;
+  border-color: #e9702d;
+  box-shadow: 0 4px 12px rgba(233, 112, 45, 0.35);
 }
 
 .nav-btn.premium {
-  background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%);
-  border: 1px solid #4CAF50;
-  color: white;
+  background: #1f2937;
+  border: 1px solid #1f2937;
+  color: #ffffff;
   font-weight: 600;
+  box-shadow: 0 2px 6px rgba(17, 24, 39, 0.25);
 }
 
 .nav-btn.premium:hover {
-  background: linear-gradient(135deg, #66BB6A 0%, #4CAF50 100%);
+  background: #111827;
+  border-color: #111827;
+  box-shadow: 0 4px 12px rgba(17, 24, 39, 0.3);
   transform: translateY(-1px);
-  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3);
 }
 
 .logout-btn {
@@ -183,22 +187,24 @@
   justify-content: space-around;
   width: 30px;
   height: 30px;
-  background: #667eea;
+  background: #1f2937;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
   padding: 5px;
-  transition: background 0.3s ease;
+  box-shadow: 0 2px 6px rgba(17, 24, 39, 0.25);
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .hamburger-menu-btn:hover {
-  background: #5568d3;
+  background: #f77f41;
+  transform: translateY(-1px);
 }
 
 .hamburger-line {
   width: 100%;
   height: 3px;
-  background: white;
+  background: #ffffff;
   border-radius: 2px;
   transition: all 0.3s ease;
 }
